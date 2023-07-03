@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Menudropdown = ({ isMenuOpen }) => {
+  // console.log(isMenuOpen);
   return (
     <nav
       className={`${
-        isMenuOpen ? "right-0" : "-right-full"
-      }  bg-[#E4E4E4] flex flex-col  gap-5 opacity-100 absolute  top-0 py-2 px-5 transition-all duration-500 w-[40vh] h-[100vh] mt-0`}
+        isMenuOpen ? "left-20" : "-right-full"
+      }  bg-[#E4E4E4] flex flex-col  gap-5 opacity-100 absolute top-0 py-2 px-5 transition-all duration-500 w-[40vh] h-[100vh] mt-0`}
     >
       <div>
         <Link to="products/1">Men</Link>

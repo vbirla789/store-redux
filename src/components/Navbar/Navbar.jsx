@@ -50,7 +50,7 @@ const Navbar = () => {
     <div
       className={
         !navState
-          ? "z-50 flex items-center gap-[15vh] absolute text-lg md:gap-[10vh] py-5  md:px-5 xl:pl-[20vh]"
+          ? "z-50 flex items-center gap-[15vh] absolute text-lg md:gap-[10vh] py-5  md:px-5 xl:pl-[20vh] w-full"
           : "sticky top-0 left-0 right-0 h-[10vh] flex items-center justify-around md:justify-between z-50 bg-[#E4E4E4] opacity-80 text-lg md:px-5"
       }
     >
@@ -93,13 +93,13 @@ const Navbar = () => {
         <div className="md:hidden">
           <Link>Stores</Link>
         </div> */}
-        <div className="text-black flex ">
+        <div className="text-black flex">
           <input
             placeholder="Search"
             type="search"
             value={value}
             onChange={onChange}
-            className="rounded-full text-base px-4 py-1 lg:mr-5 w-[60vh] md:w-[55vh] md:absolute top-[14vh] left-4 bg-[#807c77] opacity-50 outline-none md:bg-[#E4E4E4] md:opacity-80 placeholder-black"
+            className="rounded-full text-base px-4 py-1 md:py-2 lg:mr-5 w-[60vh] md:w-[83%] md:absolute top-[12vh] left-6 bg-[#807c77] opacity-50 outline-none md:bg-[#E4E4E4] md:opacity-80 placeholder-black"
           />
           <button onClick={() => onSearch(value)}>
             <SearchIcon />
@@ -141,7 +141,7 @@ const Navbar = () => {
         <div
           className={
             isMenuOpen
-              ? "absolute top-[40vh] right-[50vh] hidden md:block md:right-[5vh] md:top-4"
+              ? "absolute top-[40vh] right-[50vh] hidden md:block md:right-5 md:top-4"
               : "hidden"
           }
         >

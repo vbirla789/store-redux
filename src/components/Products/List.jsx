@@ -26,7 +26,7 @@ const List = ({ data: { id, img, head, imgData, items } }) => {
           <p className="font-normal">{val.desc}</p>
         </div>
       ))}
-      <div className="flex gap-2  my-10 md:flex-wrap md:w-[50vh] md:gap-5 md:items-center md:justify-center ">
+      <div className="flex gap-2 my-10 md:flex-wrap md:w-[50vh] md:gap-3 md:pl-4">
         {items.map((data, i) => (
           <ListItems {...data} />
         ))}

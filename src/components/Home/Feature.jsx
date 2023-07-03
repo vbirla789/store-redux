@@ -31,7 +31,7 @@ const Feature = ({ ifExists, featureData: { head1, items } }) => {
               {ifExists ? val.title1 : val.title2}
             </h1>
           </div>
-          <div className="w-[100vh] text-[#777] text-lg md:w-[45vh]">
+          <div className="w-[100vh] text-[#777] text-lg md:w-[42vh]">
             <p className="font-semibold">{val.desc}</p>
           </div>
         </div>
