@@ -134,7 +134,7 @@ const Navbar = () => {
             {products.length}
           </span>
         </div>
-        <div className="hidden md:block mt-1 ml-2">
+        <div className="hidden lg:block mt-1 ml-2">
           <RxHamburgerMenu onClick={() => setIsMenuOpen(!isMenuOpen)} />
           {isMenuOpen && <Menudropdown isMenuOpen={isMenuOpen} />}
         </div>
