@@ -12,7 +12,7 @@ const Product = () => {
   // const products = useSelector((state) => state.cart.products);
   const productData = useSelector((state) => state.cart.productData);
 
-  console.log(productData);
+  // console.log(productData);
 
   const compare = () => {
     let compareProductData = productData.filter((e) => {

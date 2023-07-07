@@ -11,33 +11,33 @@ const Feature = ({ ifExists, featureData: { head1, items } }) => {
     type: "loop",
     rewind: true,
     keyboard: "global",
-    gap: "0rem",
+    gap: "1rem",
     pagination: false,
-    padding: "0rem",
+    padding: "2rem",
     breakpoints: {
       1200: { perPage: 3 },
       991: { perPage: 2.3 },
-      768: { perPage: 3 },
-      500: { perPage: 4 },
-      425: { perPage: 4 },
+      768: { perPage: 2 },
+      500: { perPage: 1.3 },
+      425: { perPage: 1.5 },
     },
   };
   return (
     <div className="flex flex-col">
       {head1.map((val, i) => (
-        <div className="flex pl-[15vh] gap-10 py-20 md:flex-col md:pl-3">
-          <div className="w-[90vh] flex items-center">
+        <div className="flex px-auto py-20 md:flex-col items-center gap-10 justify-center md:py-10 mx-10">
+          <div className="flex items-center">
             <h1 className="text-gray-600 text-2xl font-bold">
               {ifExists ? val.title1 : val.title2}
             </h1>
           </div>
-          <div className="w-[100vh] text-[#777] text-lg md:w-[42vh]">
+          <div className="text-[#777] text-lg md:w-[80%] w-[80%]">
             <p className="font-semibold">{val.desc}</p>
           </div>
         </div>
       ))}
 
-      <div className="pl-[40vh] w-[200vh] pb-10 md:pl-[2vh] md:w-[100vh]">
+      <div className="">
         <Splide options={splideOptions}>
           {items.map((data, i) => (
             <SplideSlide>
