@@ -27,7 +27,7 @@ const Products = () => {
 
   return (
     <div className="pt-[15vh] flex">
-      <div className="flex flex-col gap-7 pl-10 w-[60vh] md:hidden">
+      <div className="flex flex-col gap-7 pl-10 w-[60vh] lg:hidden">
         <div>
           <h1 className="font-semibold text-xl mb-4">New Arrivals</h1>
           <div className="flex flex-col gap-3 text-lg font-medium">

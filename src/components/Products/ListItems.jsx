@@ -14,10 +14,10 @@ const ListItems = ({ id, img1, title, price }) => {
 
   return (
     <section key={id}>
-      <div className="w-[35vh] flex flex-col md:w-[20vh] md:h-[10vh] md:mb-[32vh]">
+      <div className="w-[35vh] flex flex-col">
         <div className="image">
           <NavLink to={`/product/${id}`}>
-            <img src={img1} alt="" className="mainImg" />
+            <img src={img1} alt="" className="mainImg w-[100%]" />
           </NavLink>
         </div>
         <h2 className="font-normal">{title}</h2>
@@ -25,7 +25,7 @@ const ListItems = ({ id, img1, title, price }) => {
           <h3>₹{price}</h3>
         </div>
         <button
-          className="bg-slate-900 text-white rounded py-2"
+          className="bg-slate-900 text-white rounded py-2 mt-2"
           onClick={() => addCart()}
         >
           Add

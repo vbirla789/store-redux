@@ -4,9 +4,9 @@ import ListItems from "./ListItems";
 const List = ({ data: { id, img, head, imgData, items } }) => {
   return (
     <div className="min-h-[150vh]">
-      <div className="relative md:hidden">
-        <div>
-          <img src={img} className="w-[130vh]  h-[120vh]" />
+      <div className="relative lg:hidden">
+        <div className="flex items-center justify-center">
+          <img src={img} className="w-[130vh]  h-[120vh] " />
         </div>
         {imgData.map((val, i) => (
           <div className="absolute top-[35vh] right-0 left-80 bottom-0 m-auto md:left-10 md:top-20">
@@ -21,12 +21,12 @@ const List = ({ data: { id, img, head, imgData, items } }) => {
         ))}
       </div>
       {head.map((val, i) => (
-        <div className="flex items-center justify-center flex-col w-[130vh] gap-10 mt-10 text-slate-700 md:w-[40vh] md:ml-5">
+        <div className="flex items-center justify-center flex-col gap-10 mt-10 text-slate-700 md:ml-5">
           <h1 className="text-5xl font-semibold md:text-4xl ">{val.title}</h1>
-          <p className="font-normal">{val.desc}</p>
+          <p className="font-normal w-[90%]">{val.desc}</p>
         </div>
       ))}
-      <div className="flex gap-2 my-10 md:flex-wrap md:w-[50vh] md:gap-3 md:pl-4">
+      <div className="flex items-center justify-center my-10 lg:flex-wrap lg:w-[100%] gap-10">
         {items.map((data, i) => (
           <ListItems {...data} />
         ))}

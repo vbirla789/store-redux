@@ -23,7 +23,7 @@ const Feature = ({ ifExists, featureData: { head1, items } }) => {
     },
   };
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mb-10">
       {head1.map((val, i) => (
         <div className="flex px-auto py-20 md:flex-col items-center gap-10 justify-center md:py-10 mx-10">
           <div className="flex items-center">
@@ -37,7 +37,7 @@ const Feature = ({ ifExists, featureData: { head1, items } }) => {
         </div>
       ))}
 
-      <div className="">
+      <div className="w-[80%] mx-auto">
         <Splide options={splideOptions}>
           {items.map((data, i) => (
             <SplideSlide>
