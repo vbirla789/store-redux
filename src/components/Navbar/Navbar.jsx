@@ -50,11 +50,11 @@ const Navbar = () => {
     <div
       className={
         !navState
-          ? "z-50 flex items-center gap-[15vh] absolute text-lg md:gap-[10vh] py-5  md:px-5 xl:pl-[20vh] w-full"
-          : "sticky top-0 left-0 right-0 h-[10vh] flex items-center justify-around md:justify-between z-50 bg-[#E4E4E4] opacity-80 text-lg md:px-5"
+          ? "z-50 flex items-center gap-[15vh] absolute text-lg md:gap-[10vh] lg:justify-between py-5  lg:px-5 xl:pl-[20vh] w-full lg:pl-[0]"
+          : "sticky top-0 left-0 right-0 h-[10vh] flex items-center justify-around md:justify-between z-50 bg-[#E4E4E4] opacity-80 text-lg md:px-5 lg:h-[8vh]"
       }
     >
-      <div className="flex gap-4 pt-2 ml-5 md:hidden">
+      <div className="flex gap-4 pt-2 ml-5 lg:hidden">
         <div className="flex ">
           <span>INR</span>
           <KeyboardArrowDownIcon />
@@ -99,7 +99,7 @@ const Navbar = () => {
             type="search"
             value={value}
             onChange={onChange}
-            className="rounded-full text-base px-4 py-1 md:py-2 lg:mr-5 w-[60vh] md:w-[83%] md:absolute top-[12vh] left-6 bg-[#807c77] opacity-50 outline-none md:bg-[#E4E4E4] md:opacity-80 placeholder-black"
+            className="rounded-full text-base px-4 py-1 md:py-2 lg:mr-5 w-[60vh] md:w-[83%] lg:absolute top-[12vh] left-10 bg-[#807c77] opacity-50 outline-none lg:bg-[#E4E4E4] md:opacity-80 placeholder-black lg:py-3"
           />
           <button onClick={() => onSearch(value)}>
             <SearchIcon />
