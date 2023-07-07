@@ -101,7 +101,7 @@ const Navbar = () => {
             onChange={onChange}
             className="rounded-full text-base px-4 py-1 md:py-2 lg:mr-5 w-[60vh] md:w-[83%] lg:absolute top-[12vh] left-10 bg-[#807c77] opacity-50 outline-none lg:bg-[#E4E4E4] md:opacity-80 placeholder-black lg:py-3"
           />
-          <button onClick={() => onSearch(value)}>
+          <button onClick={() => onSearch(value)} className="ml-5">
             <SearchIcon />
           </button>
         </div>
@@ -141,13 +141,13 @@ const Navbar = () => {
         <div
           className={
             isMenuOpen
-              ? "absolute top-[40vh] right-[50vh] hidden md:block md:right-5 md:top-4"
+              ? "absolute right-[50vh] hidden md:block md:right-5 lg:top-[40vh]"
               : "hidden"
           }
         >
           <RxCross1
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-black"
+            className="text-black text-2xl"
           />
         </div>
       </div>
